@@ -9,6 +9,10 @@
     @include('layouts._header')
 
     <div class="container">
+        {{--提示语--}}
+        @include('shared._messages')
+
+        {{--内容--}}
         @yield('content')
 
         {{--尾部子视图--}}
